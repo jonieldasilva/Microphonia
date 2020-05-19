@@ -1,0 +1,28 @@
+body {
+  font-family: monospace;
+}
+
+div {
+  /* background-color: khaki; */
+}
+.row {
+  width: 360px;
+  margin: 0 auto 20px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col {
+  border: 4px dashed rgba(223, 115, 115);
+  padding: 10px;
+  background-color: rgb(177, 227, 250);
+  float: left;
+  margin-left: 20px;
+  width: 100px;
+  box-sizing: border-box;
+}
+.col:first-child {
+  margin-left: 0;
+}
