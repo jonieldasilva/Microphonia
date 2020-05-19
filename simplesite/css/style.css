@@ -1,0 +1,33 @@
+.box {
+  padding: 20px;
+  margin: 5px 0;
+  color: white;
+  font-family: monospace;
+}
+.box-1 {
+  background-color: #ffd400;
+  position: relative;
+}
+.box-1:after {
+  content: "";
+  position: absolute;
+  background-color: salmon;
+  height: 4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  opacity: 0.5;
+}
+.box-1:before {
+  content: "Hello there!";
+}
+
+.box-2 {
+  background-color: #0007ff;
+}
+
+.colsticky {
+  background-color: red;
+  position: sticky;
+  top: 0;
+}

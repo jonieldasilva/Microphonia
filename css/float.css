@@ -26,3 +26,7 @@ div {
 .col:first-child {
   margin-left: 0;
 }
+.col:last-child {
+  transform: translateX(20%);
+  transform: translateY(50%);
+}
