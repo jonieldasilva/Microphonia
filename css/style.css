@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+.hero-banner {
+  background-color: #007fff;
+  min-height: 100vh;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.hero-banner h1 {
+  color: white;
+  margin: 14px 0 20px;
+}
+.hero-banner h3 {
+  color: white;
+  margin: 0 0 35px;
+}
+.hero-banner h4,
+.hero-banner h4 a {
+  color: white;
+  margin: 0;
+}
+
+.character1 {
+  background: url(../img/character1.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 363px;
+  height: 344px;
+  position: absolute;
+  top: 117px;
+  right: 10%;
+  transform: rotate(15deg);
+}
+.character2 {
+  background: url(../img/character2.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 309px;
+  height: 371px;
+  position: absolute;
+  top: 213px;
+  right: 277px;
+}
+.character3 {
+  background: url(../img/character3.png) no-repeat 0 0;
+  background-size: 100%;
+  width: 297px;
+  height: 286px;
+  position: absolute;
+  top: 74px;
+  right: 10px;
+}
+a.cta,
+button.cta {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background: #007fff;
+  display: inline-block;
+  box-shadow: 0 0 0 10px rgba(0, 127, 255, 0.15);
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+a.cta.alt,
+button.cta.alt {
+  background-color: #ffd400;
+  color: #111;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
+}
+/* <div class="hero-banner">
+      <div class="wrapper">
+        <h4>
+          Joni from
+          <a href="http://medium.com/microphonia">Microphonia</a>presents:
+        </h4>
+        <h1>A revolta dos decibéis</h1>
+        <h3>Reflexoes sobre cultura e rebeliao criativa</h3>
+        <a class="cta alt" href="#more-info">Read More</a>
+      </div>
+      <div class="character1"></div>
+      <div class="character1"></div>
+      <div class="character1"></div>
+    </div> */
