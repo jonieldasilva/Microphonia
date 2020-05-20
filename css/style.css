@@ -9,6 +9,10 @@ h1 {
   font-weight: 800;
   font-size: 50px;
 }
+h2 {
+  font-weight: 800;
+  font-size: 50px;
+}
 h3 {
   font-weight: bold;
   font-size: 30px;
@@ -17,9 +21,15 @@ h4 {
   font-weight: bold;
   font-size: 20px;
 }
+p {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 30px 0;
+}
 .wrapper {
   width: 960px;
   margin: 0 auto;
+  background-color: yellow;
 }
 .hero-banner {
   background-color: #007fff;
@@ -89,17 +99,62 @@ button.cta.alt {
   color: #111;
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
 }
-/* <div class="hero-banner">
-      <div class="wrapper">
-        <h4>
-          Joni from
-          <a href="http://medium.com/microphonia">Microphonia</a>presents:
-        </h4>
-        <h1>A revolta dos decibéis</h1>
-        <h3>Reflexoes sobre cultura e rebeliao criativa</h3>
-        <a class="cta alt" href="#more-info">Read More</a>
-      </div>
-      <div class="character1"></div>
-      <div class="character1"></div>
-      <div class="character1"></div>
-    </div> */
+nav {
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+}
+nav .logo {
+  display: block;
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -20px;
+  margin-left: 30px;
+  background: url(../img/logo.png) no-repeat 0 0;
+  background-size: 100%;
+  background-color: yellow;
+  overflow: hidden;
+  text-indent: 999px;
+}
+nav ul {
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: right;
+}
+nav ul li a {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+  padding: 30px 10px;
+  line-height: 30px;
+}
+.more-info {
+  text-align: center;
+}
+
+/* <div class="more-info" id="more-info">
+<h2>Join Our Fan Club</h2>
+<p>
+  Microphonia, assim mesmo com PH <span class="highlight">farmácia</span>,
+  é um canal no YOUTUBE sobre a cena musical do rock e seus vetores afins
+  que nasceu recentemente quando sete amigos perceberam uma cena que
+  começava a ficar pujante no número e qualidade de bandas, mas que
+  carecia de uma divulgação maior.
+</p>
+<button class="cta">Sign me Up!</button>
+</div> */
