@@ -29,7 +29,7 @@ p {
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .hero-banner {
   background-color: #007fff;
@@ -59,7 +59,7 @@ p {
   width: 363px;
   height: 344px;
   position: absolute;
-  top: 117px;
+  top: 10%;
   right: 10%;
   transform: rotate(15deg);
 }
@@ -78,8 +78,8 @@ p {
   width: 297px;
   height: 286px;
   position: absolute;
-  top: 74px;
-  right: 10px;
+  top: 300x;
+  right: 109px;
 }
 a.cta,
 button.cta {
@@ -92,9 +92,19 @@ button.cta {
   padding: 20px 30px;
   border-radius: 10px;
   text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+a.cta:hover,
+button.cta:hover {
+  opacity: 0.7;
+  scale: 2;
 }
 a.cta.alt,
 button.cta.alt {
+  position: absolute;
+  bottom: 110px;
   background-color: #ffd400;
   color: #111;
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
@@ -105,6 +115,7 @@ nav {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 nav .logo {
   display: block;
@@ -158,15 +169,115 @@ nav ul li a {
   line-height: 50px;
   display: inline;
 }
+.sep {
+  width: 470px;
+  height: 10px;
+  margin: 70px auto;
+  background-color: #111111;
+}
+.story h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.nb-list {
+  width: 470px;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  background-color: #ededed;
+  float: left;
+  margin: 0 20px 20px 0;
+  position: relative;
+}
+.nb-list li {
+  height: 70px;
+  border-radius: 10px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+}
+.nb-list li.red {
+  background-color: #ff3300;
+}
+.nb-list li.blue {
+  background-color: #007fff;
+}
+.nb-list li.gray {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.nb-list li.yellow {
+  background-color: #ffd400;
+  color: #111111;
+}
+.nb-list li.pink {
+  background-color: #ffadf9;
+}
+.nb-list li.salmon {
+  background-color: #fa8072;
+}
 
-/* <div class="more-info" id="more-info">
-<h2>Join Our Fan Club</h2>
-<p>
-  Microphonia, assim mesmo com PH <span class="highlight">farmácia</span>,
-  é um canal no YOUTUBE sobre a cena musical do rock e seus vetores afins
-  que nasceu recentemente quando sete amigos perceberam uma cena que
-  começava a ficar pujante no número e qualidade de bandas, mas que
-  carecia de uma divulgação maior.
-</p>
-<button class="cta">Sign me Up!</button>
-</div> */
+.nb-list li.dragging {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  right: -30px;
+  transform: rotate(6deg);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+}
+.nb-list li.dragging:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 54px;
+  height: 60px;
+  background: url(../img/hand.png) no-repeat 0 0;
+  background-size: 100%;
+  bottom: -30px;
+  left: 60%;
+}
+.gang-img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  margin-bottom: 85px 0 45px;
+  font-weight: bold;
+}
+footer a {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.popup {
+  display: none;
+}
+/* <div class="sep"></div>
+    <div class="story" id="story">
+      <ul class="nb-list">
+        <li class="blue">Rock’n’roll</li>
+        <li class="gray">&nbsp;</li>
+        <li class="yellow" class="dragging">Laughter</li>
+        <li class="red">Square Offs</li>
+        <li class="pink">Circuitous Routes</li>
+        <li class="salmon">Trigonometry</li>
+        <li class="blue">Red Hats</li>
+        <li class="yellow">Being</li>
+      </ul>
+      <h3>Mas enfim, sem xurumelas, o que é Microphonia?</h3>
+      <p>
+        É simples. É complicado. É o curto-circuito sonoro. É o retorno, o
+        feedback. É barulho, atitude, é o que destoa. É cultura, é rock’n’roll.
+        Viemos pra divulgar e incomodar.
+      </p>
+      <p>
+        O eterno retorno do rock, a onda em loop e no loop da onda, dragados num
+        redemoinho de informações sonoras. Viemos para ficar, amplificar e
+        incomodar os incautos.
+      </p>
+    </div> */

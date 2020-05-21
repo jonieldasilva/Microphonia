@@ -1,0 +1,9 @@
+a,
+.cta {
+  background-color: yellow;
+}
+
+a:hover,
+.cta:hover {
+  background-color: red;
+}
