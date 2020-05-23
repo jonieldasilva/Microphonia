@@ -12,8 +12,8 @@
           Joni from
           <a href="http://medium.com/microphonia">Microphonia</a> presents:
         </h4>
-        <h1>The Silliest & Most Awesome Gang In The World!</h1>
-        <h3>It’s Circle Guy, Hat Guy & Red Guy.
+        <h1>The Silliest &<br/> Most Awesome Gang<br/>  In The World!</h1>
+        <h3>It’s Circle Guy, Hat Guy & Red Guy.<br/> 
           They’re the best of friends.</h3>
         <a class="cta alt" href="#more-info">Read More</a>
       </div>
@@ -25,7 +25,7 @@
     <nav>
       <a href="#" class="logo">Microphonia</a>
       <ul>
-        <li><a href="#">Sign Up</a></li>
+        <li><a onclick="showPopup();">Sign Up</a></li>
         <li><a href="#story">The Story</a></li>
         <li><a href="#more-info">More Info</a></li>
       </ul>
@@ -36,7 +36,7 @@
       <p>
         Every week we have <span class="highlight">a party</span>. If you want to join us then join our fan club. Members will also receive pictures of us in all kinds of shapes and sizes. Cool huh?
       </p>
-      <button class="cta">Sign me Up!</button>
+      <button class="cta" onclick="showPopup();">Sign me Up!</button>
    </div>
     <div class="sep"></div>
     <div class="story" id="story">
@@ -73,11 +73,12 @@ They even started making fun of squares and rectangles in what they like to call
       Made by Joniel from <a href="http://www.youtube.com/microphonia">Microphonia<a>
       </div>
     </footer>
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="blanket"></div>
-      <div class="content"></div>
+      <div class="content">
       <h2>Fill in your details</h2>
       <form action="">
+        <div class="row">
         <div class="item">
         <label>Your First Name</label>
         <input type="text" placeholder="Awesomeface" value="Shirley">
@@ -86,6 +87,8 @@ They even started making fun of squares and rectangles in what they like to call
         <label>Your Last Name</label>
         <input type="text" placeholder="Circleface">
       </div>
+    </div>
+    <div class="row">
       <div class="item">
         <label>Your Favorite Color</label>
         <input type="text" placeholder="Pink">
@@ -94,9 +97,12 @@ They even started making fun of squares and rectangles in what they like to call
         <label>Your Favorite Food</label>
         <input type="text" placeholder="Apple Pie">
       </div>
+    </div>
       <button class="cta">I want in!</button>
     </form>
-      <button class="close">Close</button>
+      <button class="close" onclick="hidePopup();">Close</button>
     </div>
+  </div>
+  <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
